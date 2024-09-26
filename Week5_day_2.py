@@ -44,3 +44,5 @@ for car in cars:
     print(len(cars))
     print(cars.upper())
     print(cars)
+    if len(cars) > 10:
+        break
