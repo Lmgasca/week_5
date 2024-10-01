@@ -1,4 +1,8 @@
-#fruits = ["apple", "orange", "banana", "coconut", "pineapple"]
+#list = []
+#set = {}
+#Tuple = ()
+
+#fruits = ["apple", "orange", "banana", "coconut"]
 #print(dir(fruits))
 #print(help(fruits))
 #print(len(fruits))
@@ -50,31 +54,92 @@
 #challenge
 # create a list of friends
 # make sure the initial list is none
-friends = []
+#friends = []
 # add a new friend to the list, add at least 5 friends
-friends.append("Max")
-friends.append("abel")
-friends.append("jovanny")
-friends.append("jimenez")
-friends.append("angel")
+#friends.append("Max")
+#friends.append("abel")
+#friends.append("jovanny")
+#friends.append("jimenez")
+#friends.append("angel")
 # remove a friend 
-friends.remove("Max")
+#friends.remove("Max")
 # insert a friends at a specific index maybe 2
-friends[2] = "diego"
+#friends[2] = "diego"
 # print the list of friends
-print(friends)
+#print(friends)
 # loop through the list and print the friends name
-for friend in friends:
-    friendRequest = input("add a new friend please: ")
-    friends.append(friendRequest)
-    print(friends)
-    print(len(friends))
-    print(friends)
+#for friend in friends:
+   # friendRequest = input("add a new friend please: ")
+   # friends.append(friendRequest)
+   # print(friends)
+  #  print(len(friends))
+   # print(friends)
 # see if a particular friend is in the list (boolean value)
-    print("jimenez" in friends)
+   # print("jimenez" in friends)
 # if the list is greater than 10 break the loop
-    if len(friends) > 10:
-        break
+   # if len(friends) > 10:
+   #     break
+
+#fruits = {"apple", "orange", "banana", "coconut"}
+#print ("pineapple" in fruits)
+
+#print(fruits[0]) This gives an error
+
+#fruits.add("pineapple") ---adds to the set
+#fruits.add("grape")
+#fruits.add("blueberry")
+#fruits.add("blackberry")
+#fruits.add("mango")
+#fruits.remove("apple") ---removes from the set
+#fruits.pop() ---pops off item at the end
+#fruits.clear() ---clears the set
+
+#print(fruits)
+
+#print(fruits.index("apple"))
+#print(fruits.count("coconut"))
 
 
+#print(dir(fruits))
+#print(help(fruits))
+#print(len(fruits))
+#print("apple" in fruits)
 
+
+# Dictionary = a collection of {key:value} pairs
+                #ordered and changeable. No duplicates
+
+capitals = {"USA": "Washington D.C.", 
+            "India": "New Delhi", 
+            "China": "Beijing", 
+            "Russia": "Moscow"}
+
+#print(dir(capitals))
+#print(help(capitals))
+#print(capitals.get("Japan"))
+
+#if capitals.get("Russia"):
+#    print("That capital exists")
+#else: 
+#    print("That capital doesn't exist")
+
+#capitals.update({"Germany": "Berlin"}) ---adds to set
+#capitals.update({"USA": "Detroit"}) ---changes the currrent set
+#capitals.pop("China") ---pops out 
+#capitals.popitem() ---pops out last 
+#capitals.clear() ---clear
+
+#print(capitals)
+
+keys = capitals.keys()
+
+for key in capitals.keys():
+    print(key)
+
+values = capitals.values()
+for value in capitals.values():
+    print(value)
+
+items = capitals.items()
+for key, value in capitals.items():
+    print(f"{key}: {value}")
